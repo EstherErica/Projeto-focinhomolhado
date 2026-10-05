@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fale com a ONG Focinho Molhado: telefone, e-mail e formulário de contato.">
+  <title>Contato | ONG Focinho Molhado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header>
+    <p class="logo"><a href="index.html">Focinho Molhado</a></p>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="contato.html" aria-current="page">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <h1>Contato</h1>
+
+    <figure class="foto-pagina">
+      <picture>
+        <source srcset="img/simba_2.webp" type="image/webp">
+        <img src="img/simba_2.jpg" alt="Simba, cachorro caramelo, olhando para a câmera" width="900" height="880">
+      </picture>
+    </figure>
+
+    <section class="card">
+      <h2>Fale com a gente</h2>
+      <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+      <p>E-mail: <a href="mailto:ongfocinhomolhado@org.com">ongfocinhomolhado@org.com</a></p>
+    </section>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Envie uma mensagem</legend>
+
+        <div class="campo">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Maria Cordeiro" required>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="maria99@gmail.com" required>
+        </div>
+        <div class="campo">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" autocomplete="tel" inputmode="numeric" data-mascara="telefone" placeholder="(11) 99999-9999" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+        </div>
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+      </fieldset>
+
+      <div>
+        <button type="submit" class="botao">Enviar mensagem</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <address>
+      ONG Focinho Molhado — São Paulo, SP<br>
+      Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a> ·
+      E-mail: <a href="mailto:ongfocinhomolhado@org.com">ongfocinhomolhado@org.com</a>
+    </address>
+    <p>&copy; 2026 ONG Focinho Molhado. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/mascaras.js"></script>
+</body>
+</html>

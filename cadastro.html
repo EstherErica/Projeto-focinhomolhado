@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastre-se como voluntário da ONG Focinho Molhado.">
+  <title>Cadastro | ONG Focinho Molhado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header>
+    <p class="logo"><a href="index.html">Focinho Molhado</a></p>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <h1>Cadastro de voluntário</h1>
+
+    <figure class="foto-pagina">
+      <picture>
+        <source srcset="img/inicio_3.webp" type="image/webp">
+        <img src="img/inicio_3.jpg" alt="Cachorro branco sorrindo, esperando por voluntários" width="900" height="880">
+      </picture>
+    </figure>
+
+    <p>Campos marcados com <span class="obrigatorio" aria-hidden="true">*</span> são obrigatórios.</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <div class="campo">
+          <label for="nome">Nome completo <span class="obrigatorio" aria-hidden="true">*</span></label>
+          <input type="text" id="nome" name="nome" autocomplete="name" minlength="3" maxlength="100" placeholder="Maria Cordeiro" required>
+        </div>
+
+        <div class="linha-2">
+          <div class="campo">
+            <label for="email">E-mail <span class="obrigatorio" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="maria99@gmail.com" required>
+          </div>
+          <div class="campo">
+            <label for="telefone">Telefone <span class="obrigatorio" aria-hidden="true">*</span></label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" inputmode="numeric" data-mascara="telefone" placeholder="(11) 99999-9999" pattern="\(\d{2}\) \d{4,5}-\d{4}" aria-describedby="dica-telefone" required>
+            <span id="dica-telefone" class="dica">Formato: (11) 99999-9999</span>
+          </div>
+        </div>
+
+        <div class="linha-2">
+          <div class="campo">
+            <label for="cpf">CPF <span class="obrigatorio" aria-hidden="true">*</span></label>
+            <input type="text" id="cpf" name="cpf" inputmode="numeric" data-mascara="cpf" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" aria-describedby="dica-cpf" required>
+            <span id="dica-cpf" class="dica">Formato: 000.000.000-00</span>
+          </div>
+          <div class="campo">
+            <label for="nascimento">Data de nascimento <span class="obrigatorio" aria-hidden="true">*</span></label>
+            <input type="date" id="nascimento" name="nascimento" autocomplete="bday" min="1900-01-01" max="2010-12-31" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+
+        <div class="campo">
+          <label for="cep">CEP <span class="obrigatorio" aria-hidden="true">*</span></label>
+          <input type="text" id="cep" name="cep" autocomplete="postal-code" inputmode="numeric" data-mascara="cep" placeholder="00000-000" pattern="\d{5}-\d{3}" aria-describedby="dica-cep" required>
+          <span id="dica-cep" class="dica">Formato: 00000-000</span>
+        </div>
+
+        <div class="campo">
+          <label for="endereco">Endereço (rua, número e complemento) <span class="obrigatorio" aria-hidden="true">*</span></label>
+          <input type="text" id="endereco" name="endereco" autocomplete="address-line1" placeholder="Rua das Flores, 123, apto 4" required>
+        </div>
+
+        <div class="linha-2">
+          <div class="campo">
+            <label for="cidade">Cidade <span class="obrigatorio" aria-hidden="true">*</span></label>
+            <input type="text" id="cidade" name="cidade" autocomplete="address-level2" placeholder="São Paulo" required>
+          </div>
+          <div class="campo">
+            <label for="estado">Estado <span class="obrigatorio" aria-hidden="true">*</span></label>
+            <select id="estado" name="estado" autocomplete="address-level1" required>
+              <option value="">Selecione</option>
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AP">AP</option>
+              <option value="AM">AM</option>
+              <option value="BA">BA</option>
+              <option value="CE">CE</option>
+              <option value="DF">DF</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MT">MT</option>
+              <option value="MS">MS</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RS">RS</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SP">SP</option>
+              <option value="SE">SE</option>
+              <option value="TO">TO</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Voluntariado</legend>
+
+        <div class="campo">
+          <label for="unidade">Unidade de voluntariado <span class="obrigatorio" aria-hidden="true">*</span></label>
+          <select id="unidade" name="unidade" required>
+            <option value="">Escolha a unidade</option>
+            <option value="sp1">Unidade SP 1</option>
+            <option value="sp2">Unidade SP 2</option>
+            <option value="sp3">Unidade SP 3</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Por que você quer ser voluntário?</label>
+          <textarea id="mensagem" name="mensagem" rows="4" maxlength="500"></textarea>
+        </div>
+      </fieldset>
+
+      <div>
+        <button type="submit" class="botao">Enviar cadastro</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <address>
+      ONG Focinho Molhado — São Paulo, SP<br>
+      Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a> ·
+      E-mail: <a href="mailto:ongfocinhomolhado@org.com">ongfocinhomolhado@org.com</a>
+    </address>
+    <p>&copy; 2026 ONG Focinho Molhado. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/mascaras.js"></script>
+</body>
+</html>
